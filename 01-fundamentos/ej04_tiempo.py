@@ -26,4 +26,8 @@ segundos = int(input("segundos: "))
 minutos = segundos // 60
 segundos_restantes = segundos % 60
 
-print(f"Son {minutos} minutos y {segundos_restantes} segundos")
+if minutos == 0:
+    print(f"Son {segundos_restantes} segundos")
+
+else:
+    print(f"Son {minutos} minutos y {segundos_restantes} segundos")
